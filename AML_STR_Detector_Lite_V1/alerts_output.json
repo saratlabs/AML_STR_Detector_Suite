@@ -1,0 +1,140 @@
+[
+  {
+    "customer_profile": {
+      "customer_id": "CUST001",
+      "name": "Rahul Kumar",
+      "financial_inclusion_flag": true,
+      "risk_band": "Low",
+      "onboarded_via": "PM Jan Dhan Yojana"
+    },
+    "trigger_rules": [
+      "RDT",
+      "MCPT"
+    ],
+    "rule_severity": "Medium",
+    "risk_score": 35.0,
+    "alert_classification": "Soft Alert - Proportionate Review",
+    "red_flags": [
+      "Recurring round-figure transactions",
+      "Mismatch between transaction pattern and customer profile"
+    ],
+    "bafin_risk_category": [
+      "Value-based anomaly",
+      "Risk-profile deviation"
+    ],
+    "transaction_articulation": "Customer 'Rahul Kumar' triggered rules: RDT, MCPT via IMPS. Behavior inconsistent with risk profile 'Low'.",
+    "compliance_references": {
+      "FATF": [
+        "Rec 10",
+        "Rec 20"
+      ],
+      "Basel": "Principle 3 - Transaction Monitoring",
+      "BaFin": "Section 6 GwG \u2013 Risk Management"
+    },
+    "str_status": "Deferred",
+    "timestamp": "2025-07-01T16:38:00.158767",
+    "channel": "IMPS"
+  },
+  {
+    "customer_profile": {
+      "customer_id": "CUST002",
+      "name": "Naveen Rao",
+      "financial_inclusion_flag": false,
+      "risk_band": "Medium",
+      "onboarded_via": "Standard Onboarding"
+    },
+    "trigger_rules": [
+      "SMF"
+    ],
+    "rule_severity": "High",
+    "risk_score": 75,
+    "alert_classification": "Moderate Alert - Queue for L1 Analyst",
+    "red_flags": [
+      "Structuring detected via fragmented transactions"
+    ],
+    "bafin_risk_category": [
+      "Fragmentation of funds"
+    ],
+    "transaction_articulation": "Customer 'Naveen Rao' triggered rules: SMF via SWIFT. Behavior inconsistent with risk profile 'Medium'.",
+    "compliance_references": {
+      "FATF": [
+        "Rec 10",
+        "Rec 20"
+      ],
+      "Basel": "Principle 3 - Transaction Monitoring",
+      "BaFin": "Section 6 GwG \u2013 Risk Management"
+    },
+    "str_status": "Queued for Filing",
+    "timestamp": "2025-07-01T16:38:00.158767",
+    "channel": "SWIFT"
+  },
+  {
+    "customer_profile": {
+      "customer_id": "CUST003",
+      "name": "Fatima Zehra",
+      "financial_inclusion_flag": false,
+      "risk_band": "High",
+      "onboarded_via": "Offshore Entity"
+    },
+    "trigger_rules": [
+      "MCPT",
+      "SMF"
+    ],
+    "rule_severity": "High",
+    "risk_score": 115,
+    "alert_classification": "Hard Alert - Escalation",
+    "red_flags": [
+      "Mismatch between transaction pattern and customer profile",
+      "Structuring detected via fragmented transactions"
+    ],
+    "bafin_risk_category": [
+      "Risk-profile deviation",
+      "Fragmentation of funds"
+    ],
+    "transaction_articulation": "Customer 'Fatima Zehra' triggered rules: MCPT, SMF via NEFT. Behavior inconsistent with risk profile 'High'.",
+    "compliance_references": {
+      "FATF": [
+        "Rec 10",
+        "Rec 20"
+      ],
+      "Basel": "Principle 3 - Transaction Monitoring",
+      "BaFin": "Section 6 GwG \u2013 Risk Management"
+    },
+    "str_status": "Filed",
+    "timestamp": "2025-07-01T16:38:00.158767",
+    "channel": "NEFT"
+  },
+  {
+    "customer_profile": {
+      "customer_id": "CUST004",
+      "name": "Michael Hans",
+      "financial_inclusion_flag": false,
+      "risk_band": "Medium",
+      "onboarded_via": "Digital KYC"
+    },
+    "trigger_rules": [
+      "RDT"
+    ],
+    "rule_severity": "Low",
+    "risk_score": 30,
+    "alert_classification": "Moderate Alert - Queue for L1 Analyst",
+    "red_flags": [
+      "Recurring round-figure transactions"
+    ],
+    "bafin_risk_category": [
+      "Value-based anomaly"
+    ],
+    "transaction_articulation": "Customer 'Michael Hans' triggered rules: RDT via RTGS. Behavior inconsistent with risk profile 'Medium'.",
+    "compliance_references": {
+      "FATF": [
+        "Rec 10",
+        "Rec 20"
+      ],
+      "Basel": "Principle 3 - Transaction Monitoring",
+      "BaFin": "Section 6 GwG \u2013 Risk Management"
+    },
+    "str_status": "Deferred",
+    "timestamp": "2025-07-01T16:38:00.158767",
+    "channel": "RTGS"
+  }
+]
